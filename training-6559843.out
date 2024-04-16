@@ -1,0 +1,75 @@
+Shape of X [N, C, H, W]: torch.Size([64, 1, 28, 28])
+Shape of y: torch.Size([64]) torch.int64
+Using cuda device
+NeuralNetwork(
+  (flatten): Flatten(start_dim=1, end_dim=-1)
+  (linear_relu_stack): Sequential(
+    (0): Linear(in_features=784, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=512, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=10, bias=True)
+  )
+)
+Epoch 1
+-------------------------------
+loss: 2.308606  [   64/60000]
+loss: 2.289270  [ 6464/60000]
+loss: 2.270140  [12864/60000]
+loss: 2.260245  [19264/60000]
+loss: 2.256007  [25664/60000]
+loss: 2.224653  [32064/60000]
+loss: 2.233397  [38464/60000]
+loss: 2.198603  [44864/60000]
+loss: 2.188134  [51264/60000]
+loss: 2.167123  [57664/60000]
+Test Error: 
+ Accuracy: 46.0%, Avg loss: 2.158020 
+
+Epoch 2
+-------------------------------
+loss: 2.176081  [   64/60000]
+loss: 2.159146  [ 6464/60000]
+loss: 2.103235  [12864/60000]
+loss: 2.114678  [19264/60000]
+loss: 2.079256  [25664/60000]
+loss: 2.014778  [32064/60000]
+loss: 2.039835  [38464/60000]
+loss: 1.960435  [44864/60000]
+loss: 1.954488  [51264/60000]
+loss: 1.892807  [57664/60000]
+Test Error: 
+ Accuracy: 61.4%, Avg loss: 1.890664 
+
+Epoch 3
+-------------------------------
+loss: 1.932797  [   64/60000]
+loss: 1.894622  [ 6464/60000]
+loss: 1.778081  [12864/60000]
+loss: 1.816173  [19264/60000]
+loss: 1.719802  [25664/60000]
+loss: 1.663278  [32064/60000]
+loss: 1.675853  [38464/60000]
+loss: 1.578284  [44864/60000]
+loss: 1.595531  [51264/60000]
+loss: 1.492234  [57664/60000]
+Test Error: 
+ Accuracy: 61.4%, Avg loss: 1.515669 
+
+Epoch 4
+-------------------------------
+loss: 1.594051  [   64/60000]
+loss: 1.551008  [ 6464/60000]
+loss: 1.401818  [12864/60000]
+loss: 1.472233  [19264/60000]
+loss: 1.358868  [25664/60000]
+loss: 1.349282  [32064/60000]
+loss: 1.356397  [38464/60000]
+loss: 1.281164  [44864/60000]
+loss: 1.318393  [51264/60000]
+loss: 1.219507  [57664/60000]
+Test Error: 
+ Accuracy: 62.8%, Avg loss: 1.248047 
+
+Done!
+Saved PyTorch Model State to model.pth
